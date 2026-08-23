@@ -1,0 +1,194 @@
+@media (max-width: 1180px) {
+  .classify-page {
+    grid-template-columns: 220px minmax(0,1fr);
+  }
+
+  .context-panel {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .side-rail {
+    display: none;
+  }
+
+  .mobile-header {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--line);
+    background: var(--rail);
+    color: white;
+  }
+
+  .ask-page { padding: 28px 18px; }
+
+  .ask-empty-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .prompt-board {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .ask-compose-panel {
+    min-height: 420px;
+  }
+
+  .classify-page {
+    grid-template-columns: 1fr;
+  }
+
+  .stepper-panel {
+    padding: 18px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .stepper-panel > h2,
+  .stepper-panel > p,
+  .stepper-panel > .section-kicker {
+    display: none;
+  }
+
+  .vertical-steps {
+    margin-top: 0;
+    grid-template-columns: repeat(6,1fr);
+    gap: 6px;
+  }
+
+  .step-item {
+    min-height: 44px;
+    display: grid;
+    place-items: center;
+    padding: 4px;
+  }
+
+  .step-item > span:last-child {
+    display: none;
+  }
+
+  .classify-main {
+    padding: 30px 22px;
+  }
+
+  .question-surface h1,
+  .email-gate h1,
+  .review-title h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 620px) {
+  .page-topline {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .page-topline h1 {
+    font-size: 46px;
+  }
+
+  .prompt-board,
+  .ask-compose-panel {
+    padding: 22px;
+  }
+
+  .scenario-list button {
+    min-height: 94px;
+  }
+
+  .thread-scroll,
+  .thread-composer {
+    padding-inline: 14px;
+  }
+
+  .thread-entry {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-icon { display: none; }
+
+  .source-list article {
+    grid-template-columns: auto 1fr;
+  }
+
+  .source-list em {
+    grid-column: 2;
+  }
+
+  .vertical-steps {
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .classify-main {
+    padding: 24px 16px;
+  }
+
+  .email-gate form {
+    grid-template-columns: 1fr;
+  }
+
+  .question-actions,
+  .review-actions {
+    flex-direction: column-reverse;
+  }
+
+  .question-actions button,
+  .review-actions button {
+    width: 100%;
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-summary dl {
+    grid-template-columns: 1fr;
+  }
+
+  .risk-banner {
+    flex-direction: column;
+  }
+
+  .action-row {
+    grid-template-columns: 32px 1fr;
+    padding-block: 10px;
+  }
+
+  .article-link {
+    grid-column: 2;
+  }
+}
+
+
+@media (max-width: 620px) {
+  .assistant-copy {
+    padding: 20px 18px;
+    font-size: 14px;
+  }
+
+  .assistant-copy p {
+    margin-bottom: 18px;
+  }
+
+  .thinking-panel {
+    padding: 16px;
+  }
+
+  .classification-thinking {
+    margin-top: 3vh;
+  }
+
+  .classification-thinking h1 {
+    font-size: 42px;
+  }
+}
